@@ -7,6 +7,8 @@ github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XL
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/clogof/protoapi v0.0.0-20220201112059-f520c2fcdbbd h1:xg0Fwa1yW5efA9DkwOEYc4DDLvuuGykFq6RrH1I8Ycs=
 github.com/clogof/protoapi v0.0.0-20220201112059-f520c2fcdbbd/go.mod h1:uMZ161YdRQbPXEufe/Rn/Ot5RvnxfzRkVneSjt/iwEg=
+github.com/clogof/protoapi v0.0.0-20220202122941-d5195e1a47b9 h1:ELigzwDzZqARcLCoXIXfhD/V9JTI3qsTcu0dXH8jMzE=
+github.com/clogof/protoapi v0.0.0-20220202122941-d5195e1a47b9/go.mod h1:uMZ161YdRQbPXEufe/Rn/Ot5RvnxfzRkVneSjt/iwEg=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
 github.com/cncf/udpa/go v0.0.0-20201120205902-5459f2c99403/go.mod h1:WmhPx2Nbnhtbo57+VJT5O0JRkEi1Wbu0z5j0R8u5Hbk=
 github.com/cncf/udpa/go v0.0.0-20210930031921-04548b0d99d4/go.mod h1:6pvJx4me5XPnfI9Z40ddWsdw2W/uZgQLFXToKeRcDiI=

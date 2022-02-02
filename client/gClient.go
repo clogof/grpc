@@ -39,6 +39,15 @@ func AskRandom(ctx context.Context, m protoapi.RandomClient, seed int64, place i
 	return m.GetRandom(ctx, request)
 }
 
+func AskSum(ctx context.Context, m protoapi.RandomClient, firstnum int64, secondnum int64) (*protoapi.Sum, error) {
+	request := &protoapi.Summands{
+		FirstNum:  firstnum,
+		SecondNum: secondnum,
+	}
+
+	return m.GetSum(ctx, request)
+}
+
 func main() {
 	if len(os.Args) == 1 {
 		fmt.Println("Using default port:", port)
@@ -85,4 +94,13 @@ func main() {
 		return
 	}
 	fmt.Println("Random Integer 2:", k.Value)
+
+	firstnum := 14
+	secondnum := 26
+	sum, err := AskSum(context.Background(), client, int64(firstnum), int64(secondnum))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Printf("%d + %d = %d\n", firstnum, secondnum, sum.SumValue)
 }

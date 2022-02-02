@@ -3,7 +3,7 @@ module github.com/clogof/grpc/client
 go 1.17
 
 require (
-	github.com/clogof/protoapi v0.0.0-20220201112059-f520c2fcdbbd
+	github.com/clogof/protoapi v0.0.0-20220202122941-d5195e1a47b9
 	google.golang.org/grpc v1.44.0
 )
 

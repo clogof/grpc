@@ -68,6 +68,18 @@ func (RandomServer) GetRandom(ctx context.Context, r *protoapi.RandomParams) (*p
 	return response, nil
 }
 
+func (RandomServer) GetSum(ctx context.Context, r *protoapi.Summands) (*protoapi.Sum, error) {
+	firstNum := r.FirstNum
+	secondNum := r.SecondNum
+	result := firstNum + secondNum
+
+	response := &protoapi.Sum{
+		SumValue: result,
+	}
+
+	return response, nil
+}
+
 func (RandomServer) GetRandomPass(ctx context.Context, r *protoapi.RequestPass) (*protoapi.RandomPass, error) {
 	rand.Seed(r.GetSeed())
 	temp := getString(r.GetLength())
